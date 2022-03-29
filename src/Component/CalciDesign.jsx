@@ -33,8 +33,10 @@ function CalciDesign() {
                     <input type="text" value={result} />
 
                     <div className="KeypadContainer">
-                        <button onClick={clear} id="clear" className="heightlighted">clear</button>
+                        <button onClick={clear} id="clear" className="heightlighted">AC</button>
                         <button onClick={backspace} id="backspace" className="heightlighted">C</button>
+                        
+                        <button value="%" onClick={handleClick} className="heightlighted">%</button>
                         <button value="/" onClick={handleClick} className="heightlighted">&divide;</button>
 
                         <button value="7" onClick={handleClick} >7</button>
